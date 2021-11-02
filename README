@@ -1,3 +1,5 @@
+git clone git@github.com:youknowqyh/configuration.git ~/config
+
 # tmux
 ln -s ~/config/.tmux.conf ~/.tmux.conf
 
