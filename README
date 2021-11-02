@@ -1,0 +1,15 @@
+# tmux
+ln -s ~/config/.tmux.conf ~/.tmux.conf
+
+# vim
+ln -s ~/config/.vimrc ~/.vimrc
+
+
+# zsh
+ln -s ~/config/.zshrc ~/.zshrc
+
+
+# if you wanna use a shortcut to restore your tmux session, type the following
+tmux kill-session -t ye
+tmux new-session -d -t ye 
+ln -s ~/config/shortcuts.sh /usr/local/bin/ye
