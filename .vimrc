@@ -1,13 +1,15 @@
 syntax on
 set tabstop=4
 set shiftwidth=4 
-set expandtab 
+set expandtab
 set ai
 set number
 set hlsearch
 set ruler
-set clipboard=unnamed
+colorscheme peachpuff
 highlight Comment ctermfg=green
+
+set clipboard=unnamed
 
 map <C-a> :call CompileRunGcc()<CR>
 func! CompileRunGcc()
@@ -22,7 +24,7 @@ func! CompileRunGcc()
         exec '!javac %'
         exec '!java %<'
     elseif &filetype == 'python'
-        exec '!python %'
+        exec '!python3 %'
     elseif &filetype == 'sh'
         :!time bash %
     elseif &filetype == 'html'
